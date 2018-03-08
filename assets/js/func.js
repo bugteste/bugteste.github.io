@@ -17,4 +17,4 @@
        console.log("bsincronizando!");
        return false;
    });
-}
+});
