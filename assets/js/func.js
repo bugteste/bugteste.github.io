@@ -15,8 +15,15 @@ $(document).ready(function () {
   });
 
   $("#sincronizar").click(function(){
-    console.log("sincronizando! hehe");
-    return false;
+    $.ajax({
+      url: 'http://agenciaroadie.com.br/loja.php',
+      type: 'GET',
+      success: function(res) {
+          var headline = $(res.responseText).find('.imoveis-item');
+          console.log(headline);
+          // $("#cabecalho").html(headline);
+      }
+    });
   });
 
 });
