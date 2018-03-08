@@ -1,11 +1,11 @@
 $(document).read(function(){
 
 
-  $("#listar").click(){
+  $("#listar").click(function(){
     console.log("listando!");
   };
 
-  $("#sincronizar").click(){
+  $("#sincronizar").click(function(){
     console.log("sincronizando!");
   };
 }
