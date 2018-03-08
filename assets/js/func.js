@@ -16,8 +16,8 @@ $(document).ready(function () {
 
   $("#sincronizar").click(function(){
     $.ajax({
-      url: 'http://agenciaroadie.com.br/loja.php',
-      type: 'GET',
+      url: 'https://www.cafeinteligencia.com.br/locacao',
+      type: 'POST',
       success: function(res) {
           var headline = $(res.responseText).find('.imoveis-item');
           console.log(headline);
