@@ -1,4 +1,4 @@
-  $(document).ready(function () {
+$(document).ready(function () {
 
   $("#listar").click(function(){
     console.log("listando! haha");
@@ -9,4 +9,5 @@
     console.log("sincronizando! hehe");
     return false;
   });
+
 });
