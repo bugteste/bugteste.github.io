@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $("#sincronizar").click(function(){
     $.ajax({
-      url: 'https://www.cafeinteligencia.com.br/locacao',
+      url: 'https://www.cafeinteligencia.com.br/locacao',      
       type: 'POST',
       success: function(res) {
           var headline = $(res.responseText).find('.imoveis-item');
