@@ -1,8 +1,17 @@
 $(document).ready(function () {
 
   $("#listar").click(function(){
-    console.log("listando! haha");
-    return false;
+    $.ajax({
+        url: 'https://www.cafeinteligencia.com.br/locacao',
+        type: 'POST',
+        // dataType: 'JSON',
+        success: function (data){
+          console.log(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown){
+          alert('Erro!!!');
+        }
+      });
   });
 
   $("#sincronizar").click(function(){
