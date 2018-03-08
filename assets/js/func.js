@@ -1,20 +1,13 @@
   $(document).ready(function () {
 
   $("#listar").click(function(){
-    console.log("listando!");
+    console.log("listando! haha");
     return false;
   });
 
   $("#sincronizar").click(function(){
-    console.log("sincronizando!");
+    console.log("sincronizando! hehe");
     return false;
   });
 
-  $("button").click(function(){
-       // $.ajax({url: "demo_test.txt", success: function(result){
-           // $("#div1").html(result);
-       // }});
-       console.log("bsincronizando!");
-       return false;
-   });
 });
